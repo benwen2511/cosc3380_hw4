@@ -13,11 +13,9 @@ Step 3 : in config.json file, input your database user, password and port in thi
 "port":
 }
 
-step 4: in your terminal, run "node server.js"
+step 4: in your terminal, run "node server.js" to run back end server side
 
-step 5: Use live server extension (available on VScode) to run HTML file
-instruction how to install live server : https://youtu.be/9kEOkw_LvGU?si=OWa7_hQhZoxYNaIl
-If you run html directly on chrome (double clicking on the html file), you will RUN INTO ERROR
+step 5: open another terminal, run "node app.js" to run front end HTML
 
 step 6:If the tables are empty, click on "create table" button to add example datas to tables on your local machine
 
