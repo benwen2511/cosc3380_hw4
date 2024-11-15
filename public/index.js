@@ -184,22 +184,24 @@ async function createTable(sql) {
 }
 
 createTableBtn.addEventListener("click", async () => {
-  await createTable(customerSql);
-  await utilities.fetchCustomers();
+  if (customerTable.style.display != "block") {
+    await createTable(customerSql);
+    await utilities.fetchCustomers();
 
-  await createTable(cardTableSql);
-  await utilities.fetchCards();
+    await createTable(cardTableSql);
+    await utilities.fetchCards();
 
-  await createTable(billTableSql);
-  await utilities.fetchBill();
+    await createTable(billTableSql);
+    await utilities.fetchBill();
 
-  await createTable(orderTableSql);
-  await utilities.fetchOrders();
+    await createTable(orderTableSql);
+    await utilities.fetchOrders();
 
-  await createTable(txSql);
-  await utilities.fetchTransaction();
+    await createTable(txSql);
+    await utilities.fetchTransaction();
 
-  displayAllTables();
+    displayAllTables();
+  }
 });
 
 // billCreateBtn.addEventListener("click", () => {
